@@ -1,0 +1,30 @@
+.destaque {
+
+    &__container {
+        @include container(85%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        @include titulo($secondary-color);
+    }
+
+    &__list {
+        display: flex;
+        width: 30vw;
+        justify-content: space-around;
+    }
+    
+    &__link {
+        font-size: $catorze;
+        color: #333;
+    }
+}
+
+.ativo {
+    color: $secondary-color;
+}
+
+@import "../sass/destaque-section-services"

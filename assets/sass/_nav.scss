@@ -1,0 +1,36 @@
+.nav {
+    background: $primary-color;
+
+    &__list {
+        display: flex;
+        width: 80%;
+        max-width: 1333px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    &__item {
+        padding: 15px 9px;
+
+        &:hover {
+            background: $primary-color-hover;
+            cursor: pointer;
+        }
+    }
+
+    &__item--btn {
+        background: $secondary-color;
+
+        &:hover {
+            background: $secondary-color-hover;
+        }
+    }
+
+    &__link {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: $doze;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}

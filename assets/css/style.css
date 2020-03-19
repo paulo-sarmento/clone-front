@@ -1,0 +1,813 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  background: #f8f8f8;
+}
+
+.header__container {
+  width: 90%;
+  max-width: 1333px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__info .search {
+  color: #682f8b;
+  font-size: 1.25rem;
+}
+
+.header__logo {
+  width: 20%;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.contato {
+  text-align: center;
+}
+
+.contato h4 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #682f8b;
+  letter-spacing: 1px;
+}
+
+.contato__contato .fa-whatsapp {
+  font-size: 1.5rem;
+  color: #48c857;
+  margin-right: 5px;
+}
+
+.contato__contato p {
+  display: inline-block;
+  color: #682f8b;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav {
+  background: #5b257b;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  max-width: 1333px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.nav__item {
+  padding: 15px 9px;
+}
+
+.nav__item:hover {
+  background: #653280;
+  cursor: pointer;
+}
+
+.nav__item--btn {
+  background: #df0390;
+}
+
+.nav__item--btn:hover {
+  background: #de279c;
+}
+
+.nav__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.main__banner img {
+  width: 100%;
+}
+
+.dots {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dots__item {
+  height: 12px;
+  width: 12px;
+  background: #5d257b;
+  border-radius: 50%;
+  margin: 10px 6px 0 6px;
+  cursor: pointer;
+}
+
+.active {
+  background: #df0390;
+}
+
+.destaque__container {
+  width: 85%;
+  max-width: 1333px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destaque__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #df0390;
+  text-align: center;
+  padding: 1em 0;
+  letter-spacing: 1px;
+}
+
+.destaque__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.destaque__link {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.ativo {
+  color: #df0390;
+}
+
+.services__container {
+  width: 85%;
+  max-width: 1333px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: 210px;
+      grid-template-rows: 210px;
+}
+
+.services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  padding: 0 1em;
+}
+
+.services__img {
+  display: block;
+  width: 163px;
+  height: 103px;
+  border-radius: 5px;
+  border: 1px solid #cbcbcb;
+}
+
+.services__img--harmonizacao {
+  background: url("../img/harmonizacao-facial.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services__img--skin {
+  background: url("../img/skinbooster-pro-corpo-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services__img--preenchimento {
+  background: url("../img/preenchimento-facial-pro-corpo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services__img--fracionado {
+  background: url("../img/co2-fracionado-pro-corpo-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services__img--agulhamento {
+  background: url("../img/microagulhamento-pro-corpo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services__img--peeling {
+  background: url("../img/peeling-diamante-pro-corpo-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services__img--harmonizacao {
+  background: url("../img/harmonizacao-facial.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services__sub-titulo {
+  font-size: 1.125rem;
+  color: #5b257b;
+  margin-top: .5em;
+  width: 163px;
+  line-height: 20.7px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.services__desc {
+  font-size: 0.875rem;
+  width: 163px;
+  font-weight: 300;
+  line-height: 20.7px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: .5em;
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.btn--mais {
+  font-size: 0.938rem;
+  padding: 19px 17px;
+  margin-top: 2em;
+  background: transparent;
+  border: 1px solid #5b257b;
+  border-radius: 5px;
+  color: #5b257b;
+}
+
+.agenda {
+  background: #5b257b;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.agenda__container {
+  width: 88%;
+  max-width: 1333px;
+  margin: 0 auto;
+}
+
+.agenda__titulo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  letter-spacing: 1px;
+}
+
+.agenda__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: .8em;
+}
+
+.agenda__input {
+  padding: 1em;
+  border-radius: 3px;
+  border: none;
+}
+
+.agenda__input--mensagem {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.btn--agenda {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+  background: #ffba3b;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.inimigos-corpo {
+  background: #fff;
+  margin-bottom: 3em;
+}
+
+.inimigos-corpo__container {
+  width: 75%;
+  max-width: 1333px;
+  margin: 0 auto;
+}
+
+.inimigos-corpo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.inimigos-corpo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 195px;
+}
+
+.inimigos-corpo__titulo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #df0390;
+  text-align: center;
+  padding: 1em 0;
+  letter-spacing: 1px;
+}
+
+.inimigos-corpo__img {
+  display: block;
+  width: 115px;
+  height: 115px;
+  -webkit-box-shadow: 0 0 6.51px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 6.51px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  border-radius: 1px solid #cbcbcb;
+}
+
+.inimigos-corpo__img--pelos {
+  background: url("../img/depilacao-pro-depil-pro-corpo-134x150.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inimigos-corpo__img--estrias {
+  background: url("../img/estrias-pro-corpo-150x130.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inimigos-corpo__img--celulite {
+  background: url("../img/celulite-pro-corpo-150x126.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inimigos-corpo__img--flacidez {
+  background: url("../img/flacidez-pro-corpo-130x150.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inimigos-corpo__img--gordura {
+  background: url("../img/gordura-localizada-pro-corpo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inimigos-corpo__sub-titulo {
+  font-size: 1.375rem;
+  color: #5b257b;
+  margin-top: .5em;
+  width: 163px;
+  line-height: 20.7px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.inimigos-corpo__desc {
+  font-size: 0.875rem;
+  width: 163px;
+  font-weight: 300;
+  line-height: 20.7px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: .5em;
+}
+
+.inimigos-corpo__btn {
+  font-size: 0.75rem;
+  color: #df0390;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 1em;
+}
+
+.depoimento {
+  background: #f7f7f7;
+}
+
+.depoimento__container {
+  width: 80%;
+  max-width: 1333px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.depoimento__titulo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #df0390;
+  text-align: center;
+  padding: 1em 0;
+  letter-spacing: 1px;
+  padding: .5em;
+}
+
+.depoimento__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.depoimento__desc {
+  position: relative;
+}
+
+.depoimento .fa-angle-right {
+  position: absolute;
+  left: 100%;
+  top: 30%;
+  font-size: 50px;
+  margin-left: .5em;
+}
+
+.depoimento .fa-angle-left {
+  position: absolute;
+  right: 100%;
+  font-size: 50px;
+  top: 30%;
+  margin-right: .5em;
+}
+
+.depoimento__quote {
+  font-size: 1.625rem;
+  width: 726px;
+  color: #333;
+  text-align: center;
+  line-height: 35px;
+  margin-top: .5em;
+}
+
+.depoimento__nome {
+  color: #333;
+  margin-top: 1em;
+}
+
+.unidade {
+  background: #fff;
+  padding: 5em 0;
+}
+
+.unidade__container {
+  width: 85%;
+  max-width: 1333px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.unidade__map {
+  width: 325px;
+  height: 325px;
+  border-radius: 50%;
+  border: 1px solid #bfbfbf;
+  background: url("../img/pro-corpo-estetica-paulista.jpg") center center/cover;
+}
+
+.unidade__info {
+  padding: 0 2em;
+}
+
+.unidade__titulo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #df0390;
+  text-align: center;
+  padding: 1em 0;
+  letter-spacing: 1px;
+  padding: 0;
+  margin-bottom: 1.5em;
+}
+
+.unidade__address {
+  color: #333;
+  margin-bottom: 1.5em;
+}
+
+.unidade__input {
+  padding: 0.9375rem 0.625rem;
+  width: 35%;
+  margin-bottom: 1.5em;
+}
+
+.btn-chegar {
+  text-transform: uppercase;
+  background: #5b257b;
+  color: #fff;
+  font-weight: 700;
+  padding: 1.4375rem 2.1875rem;
+  border-radius: 10px;
+}
+
+.letter {
+  background: #5b257b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.letter__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  width: 80%;
+  max-width: 1333px;
+  margin: 0 auto;
+}
+
+.letter__titulo {
+  color: #fff;
+  font-size: 1.375rem;
+  margin-right: 5em;
+}
+
+.letter__input {
+  padding: 0.938rem;
+  border: none;
+  width: 25%;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.btn--cadastro {
+  background: #5b257b;
+  border: 1px solid #fff;
+  padding: 0.938rem 1.875rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #f7f7f7;
+}
+
+.footer__container {
+  width: 84%;
+  max-width: 1333px;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer__nav {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__titulo {
+  font-size: 1.125rem;
+  color: #df0390;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.footer__link {
+  color: #333;
+  line-height: 28px;
+}
+
+.footer__link:hover {
+  color: #df0390;
+}
+
+.contato-footer {
+  margin-left: 7rem;
+  background: #894c9d;
+  padding: 1em;
+  color: #fff;
+  font-weight: 500;
+  text-align: left;
+}
+
+.contato-footer__titulo {
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  margin-bottom: .3em;
+}
+
+.contato-footer__numero {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.625rem;
+}
+
+.contato-footer p {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin: .5em 0;
+}
+
+.contato-footer__icon {
+  width: 10%;
+}
+
+.btn--unidade {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 0.875rem;
+  background: #fff;
+}
+
+.fa-chevron-up {
+  font-size: 0.75rem;
+  color: #333;
+}
+
+.company {
+  background: #fff;
+  text-align: center;
+  color: #333;
+  padding: 1em 0;
+}
+
+.company__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.company__social {
+  margin-right: .5em;
+}
+
+.company__social i {
+  font-size: 20px;
+  color: #df0390;
+  padding: 1em 0;
+}
+
+.company__direitos {
+  font-size: 0.875rem;
+  padding-bottom: 1em;
+}
+
+.company__desenvolvido {
+  font-size: 10px;
+}
+/*# sourceMappingURL=style.css.map */

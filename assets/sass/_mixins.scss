@@ -1,0 +1,37 @@
+@mixin container($width) {
+    width: $width;
+    max-width: 1333px;
+    margin: 0 auto;
+}
+
+@mixin background() {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin titulo($color) {
+    font-size: $trinta;
+    font-weight: 700;
+    color: $color;
+    text-align: center;
+    padding: 1em 0;
+    letter-spacing: 1px;
+}
+
+@mixin sub-titulo() {
+    color: $primary-color;
+    margin-top: .5em;
+    width: 163px;
+    line-height: 20.7px;
+    flex: 1;
+}
+
+@mixin descricao() {
+    font-size: $catorze;
+    width: 163px;
+    font-weight: 300;
+    line-height: 20.7px;
+    flex: 1;
+    margin-top: .5em;
+}

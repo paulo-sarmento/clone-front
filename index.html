@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica Estética</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a class="header__logo" href="#">
+                <img src="assets/img/logo-topo-min.png" alt="Clínica Estética" />
+            </a>
+            <div class="header__info">
+                <div class="contato">
+                    <h4>avaliação gratuita</h4>
+                    <a class="contato__contato" href="#">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>4003-2235</p>
+                    </a>
+                </div>
+                <a class="search" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="#">estética facial</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">estética corporal</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">pró-depil</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">remoção de tatuagem</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">cirurgia plástica</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">promoções</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">unidades</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">blog</a>
+            </li>
+            <li class="nav__item nav__item--btn">
+                <a class="nav__link" href="#"><i class="fas fa-shopping-cart"></i> compre online</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <a class="main__banner" href="#">
+            <img src="assets/img/semana-harmonização-home-desktop-2.jpg" alt="Harmonizacao Facial">
+        </a>
+        <ol class="dots">
+            <li class="dots__item active"></li>
+            <li class="dots__item"></li>
+            <li class="dots__item"></li>
+            <li class="dots__item"></li>
+            <li class="dots__item"></li>
+            <li class="dots__item"></li>
+        </ol>
+
+        <section class="destaque">
+            <div class="destaque__container">
+                <h1 class="destaque__title">Serviços em Destaque</h1>
+                <ul class="destaque__list">
+                    <li class="destaque__item">
+                        <a class="destaque__link ativo" href="#">Estética Facial</a>
+                    </li>
+                    <li class="destaque__item">
+                        <a class="destaque__link" href="#">Estética Corporal</a>
+                    </li>
+                    <li class="destaque__item">
+                        <a class="destaque__link" href="#">Cirurgia Plástica</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="services">
+                <div class="services__container">
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <a class="services__img services__img--harmonizacao" href="#"></a>
+                            <h3 class="services__sub-titulo">Harmonização Facial</h3>
+                            <p class="services__desc">Melhora a harmonia do rosto e rejuvenesce</p>
+                        </li>
+                        <li class="services__item">
+                            <a class="services__img services__img--skin" href="#"></a>
+                            <h3 class="services__sub-titulo">Skinbooster &#174</h3>
+                            <p class="services__desc">Conheça a fonte da juventude e dê adeus aos cremes hidratantes</p>
+                        </li>
+                        <li class="services__item">
+                            <a class="services__img services__img--preenchimento" href="#"></a>
+                            <h3 class="services__sub-titulo">Preenchimento</h3>
+                            <p class="services__desc">Procedimento para correção de rugas e bigode chinês</p>
+                        </li>
+                        <li class="services__item">
+                            <a class="services__img services__img--fracionado" href="#"></a>
+                            <h3 class="services__sub-titulo">CO2 Fracionado</h3>
+                            <p class="services__desc">Tratamento eficiente contra manchas e marcas do envelhecimento</p>
+                        </li>
+                        <li class="services__item">
+                            <a class="services__img services__img--agulhamento" href="#"></a>
+                            <h3 class="services__sub-titulo">Microagulhamento</h3>
+                            <p class="services__desc">Tratamento para rugas, cicatrizes de acne e flacidez</p>
+                        </li>
+                        <li class="services__item">
+                            <a class="services__img services__img--peeling" href="#"></a>
+                            <h3 class="services__sub-titulo">Peeling de Diamante</h3>
+                            <p class="services__desc">Tratamento eficaz contra acne, manchas e rugas</p>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn--mais">Ver mais Estética Facial</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="agenda">
+            <div class="agenda__container">
+                <h2 class="agenda__titulo">Agende uma Avaliação Gratuita</h2>
+
+                <form class="agenda__form">
+                    <input class="agenda__input" type="text" placeholder="Nome">
+                    <input class="agenda__input" type="email" placeholder="Email">
+                    <input class="agenda__input" type="tel" placeholder="Telefone (com DDD)">
+                    <select class="agenda__input">
+                        <option value="selected">Qual Unidade?</option>
+                    </select>
+                    <input class="agenda__input agenda__input--mensagem" type="text" placeholder="Mensagem">
+                    <button class="btn btn--agenda">Agendar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="inimigos-corpo">
+            <div class="inimigos-corpo__container">
+                <h3 class="inimigos-corpo__titulo">Os 5 inimigos do corpo perfeito</h3>
+                <ul class="inimigos-corpo__list">
+                    <li class="inimigos-corpo__item">
+                        <a class="inimigos-corpo__img inimigos-corpo__img--pelos" href="#"></a>
+                        <h3 class="inimigos-corpo__sub-titulo">Pelos</h3>
+                        <p class="inimigos-corpo__desc">Livre-se facilmente desse incômodo com Pró-Depil, a depilação da Pró-Corpo</p>
+                        <a class="inimigos-corpo__btn" href="#">saiba mais</a>
+                    </li>
+                    <li class="inimigos-corpo__item">
+                        <a class="inimigos-corpo__img inimigos-corpo__img--estrias" href="#"></a>
+                        <h3 class="inimigos-corpo__sub-titulo">Estrias</h3>
+                        <p class="inimigos-corpo__desc">Acabe com as estrias com os tratamentos avançados da Pró-Corpo</p>
+                        <a class="inimigos-corpo__btn" href="#">saiba mais</a>
+                    </li>
+                    <li class="inimigos-corpo__item">
+                        <a class="inimigos-corpo__img inimigos-corpo__img--celulite" href="#"></a>
+                        <h3 class="inimigos-corpo__sub-titulo">Celulite</h3>
+                        <p class="inimigos-corpo__desc">Conheça os tratamentos da Pró-Corpo e mande as celulites para longe</p>
+                        <a class="inimigos-corpo__btn" href="#">saiba mais</a>
+                    </li>
+                    <li class="inimigos-corpo__item">
+                        <a class="inimigos-corpo__img inimigos-corpo__img--flacidez" href="#"></a>
+                        <h3 class="inimigos-corpo__sub-titulo">Flacidez</h3>
+                        <p class="inimigos-corpo__desc">É possível tratar a flacidez com tratamentos de estética avançada</p>
+                        <a class="inimigos-corpo__btn" href="#">saiba mais</a>
+                    </li>
+                    <li class="inimigos-corpo__item">
+                        <a class="inimigos-corpo__img inimigos-corpo__img--gordura" href="#"></a>
+                        <h3 class="inimigos-corpo__sub-titulo">Gordura Localizada</h3>
+                        <p class="inimigos-corpo__desc">Procedimentos que reduzem medidas a partir da 1ª sessão</p>
+                        <a class="inimigos-corpo__btn" href="#">saiba mais</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="depoimento">
+            <div class="depoimento__container">
+                <h1 class="depoimento__titulo">Depoimentos</h1>
+                <img class="depoimento__img" src="assets/img/depoimento-pro-corpo-sthefany.png" alt="">
+                <div class="depoimento__desc">
+                    <i class="fa fa-angle-left"></i>
+                    <blockquote class="depoimento__quote">
+                        É a primeira vez que eu venho. As pessoas são super simpáticas e eu fui muito bem atendida. Estou me sentindo ótima, super leve.
+                    </blockquote>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <p class="depoimento__nome">Sthefany Diaz</p>
+            </div>
+        </section>
+
+        <section class="unidade">
+            <div class="unidade__container">
+                <div class="unidade__map">
+
+                </div>
+                <div class="unidade__info">
+                    <h2 class="unidade__titulo">Escolha a unidade mais próxima de você</h2>
+                    <select class="unidade__input">
+                        <option value="selected">Estado</option>
+                    </select>
+                    <select class="unidade__input">
+                        <option value="selected">Unidade</option>
+                    </select>
+                    <address class="unidade__address">
+                        <strong>Endereço: </strong>
+                        Rua Sen. Souza Naves, 1510 – Centro <br>
+                        <strong>Telefone: </strong>
+                        (43) 3375-7000
+                    </address>
+                    <button class="btn btn-chegar">como chegar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="letter">
+            <div class="letter__container">
+                    <h2 class="letter__titulo">Receba nossa Newsletter</h2>
+                    <input class="letter__input" type="text" placeholder="Nome">
+                    <input class="letter__input" type="email" placeholder="Email">
+                </form>
+                <button class="btn btn--cadastro">cadastrar</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <h4 class="footer__titulo">Mais Buscados</h4>
+                        <a class="footer__link" href="#">Harmonização Facial</a>
+                        <a class="footer__link" href="#">Criolipólise</a>
+                        <a class="footer__link" href="#">Preenchimento</a>
+                        <a class="footer__link" href="#">Rugas</a>
+                        <a class="footer__link" href="#">CO2 Fracionado</a>
+                        <a class="footer__link" href="#">Olheiras</a>
+                        <a class="footer__link" href="#">Dermaroller</a>
+                        <a class="footer__link" href="#">Bigode Chinês</a>
+                        <a class="footer__link" href="#">Skinbooster &#174</a>
+                        <a class="footer__link" href="#">Aplicação de Enzimas</a>
+                    </ul>
+
+                    <ul class="footer__list">
+                        <h4 class="footer__titulo">Institucional</h4>
+                        <a class="footer__link" href="#">Sobre Nós</a>
+                        <a class="footer__link" href="#">Promoções</a>
+                        <a class="footer__link" href="#">Blog</a>
+                        <a class="footer__link" href="#">Loja Online</a>
+                        <a class="footer__link" href="#">Unidades</a>
+                        <a class="footer__link" href="#">Fotos de Antes e Depois</a>
+                        <a class="footer__link" href="#">Simule seu Antes e Depois</a>
+                        <a class="footer__link" href="#">Formas de Pagamento</a>
+                        <a class="footer__link" href="#">Fale Conosco</a>
+                        <a class="footer__link" href="#">Pró-Corpo na Mídia</a>
+                        <a class="footer__link" href="#">Parcerias</a>
+                        <a class="footer__link" href="#">Trabalhe Conosco</a>
+                        <a class="footer__link" href="#">Política de Privacidade</a>
+                    </ul>
+
+                    <ul class="footer__list">
+                        <h4 class="footer__titulo">Procedimentos</h4>
+                        <a class="footer__link" href="#">Estética Facial</a>
+                        <a class="footer__link" href="#">Estética Corporal</a>
+                        <a class="footer__link" href="#">Remoção de Tatuagem</a>
+                        <a class="footer__link" href="#">Pró-Depil</a>
+                        <a class="footer__link" href="#">Cirurgia Plástica</a>
+                    </ul>
+                </nav>
+
+                <div class="contato-footer">
+                    <h6 class="contato-footer__titulo">avaliação gratuita</h6>
+                    <a class="contato-footer__numero" href="#">4007-1437
+                        <img class="contato-footer__icon" src="assets/img/120px-WhatsApp.svg.png" alt="">
+                    </a>
+                    <p>já é cliente?</p>
+                    <button class="btn btn--unidade">Escolha a Unidade <i class="fas fa-chevron-up"></i> </button>
+                </div>
+            </div>
+
+            <div class="company">
+                <ul class="company__social-list">
+                    <li class="company__social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="company__social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="company__social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="company__social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+                <p class="company__direitos">Pró-Corpo 2020 | Todos os direitos reservados</p>
+                <p class="company__desenvolvido">Desenvolvimento 18digital</p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>

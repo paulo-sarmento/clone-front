@@ -1,0 +1,37 @@
+.agenda {
+    background: $primary-color;
+    padding: 2em;
+    margin-top: 2em;
+
+    &__container {
+        @include container(88%);
+    }
+
+    &__titulo {
+        @include titulo(#fff);
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .8em;
+    }
+
+    &__input {
+        padding: 1em;
+        border-radius: 3px;
+        border: none;
+
+        &--mensagem {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+}
+
+.btn--agenda {
+    grid-column: 4 / 5;
+    background: #ffba3b;
+    border-radius: 3px;
+    font-weight: 700;
+}

@@ -1,0 +1,35 @@
+.main {
+
+    &__banner {
+        
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        height: 12px;
+        width: 12px;
+        background: #5d257b;
+        border-radius: 50%;
+        margin: 10px 6px 0 6px;
+        cursor: pointer;
+    }
+}
+
+.active {
+    background: #df0390;
+}
+
+@import "../sass/destaque-section";
+@import "../sass/agenda";
+@import "../sass/inimigos-corpo";
+@import "../sass/depoimento";
+@import "../sass/unidade";
+@import "../sass/news";

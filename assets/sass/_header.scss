@@ -1,0 +1,58 @@
+.header {
+    background: #f8f8f8;
+
+    &__container {
+        @include container(90%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    &__info {
+        display: flex;
+        width: 15vw;
+        align-items: center;
+        justify-content: space-between;
+
+        & .search {
+            color: $primary-text-color;
+            font-size: $vinte;
+        }
+    }
+
+    &__logo {
+        width: 20%;
+    }
+
+    &__logo img {
+        width: 100%;
+    }
+}
+
+.contato {
+    text-align: center;
+
+    & h4 {
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: $doze;
+        color: $primary-text-color;
+        letter-spacing: 1px;
+    }
+
+    &__contato {
+        & .fa-whatsapp {
+            font-size: $vintequatro;
+            color: #48c857;
+            margin-right: 5px;
+        }
+
+        & p {
+            display: inline-block;
+            color: $primary-text-color;
+            font-size: $vintequatro;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.company {
+    background: #fff;
+    text-align: center;
+    color: #333;
+    padding: 1em 0;
+
+    &__social-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social {
+        margin-right: .5em;
+
+        i {
+            font-size: 20px;
+            color: $secondary-color;
+            padding: 1em 0;
+        }
+    }
+
+    &__direitos {
+        font-size: $catorze;
+        padding-bottom: 1em;
+    }
+
+    &__desenvolvido {
+        font-size: 10px;
+    }
+}

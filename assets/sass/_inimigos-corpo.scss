@@ -1,0 +1,77 @@
+.inimigos-corpo {
+    background: #fff;
+    margin-bottom: 3em;
+
+    &__container {
+        @include container(75%);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 195px;
+    }
+
+    &__titulo {
+        @include titulo($secondary-color);
+    }
+
+    &__img {
+        display: block;
+        width: 115px;
+        height: 115px;
+        box-shadow: 0 0 6.51px rgba(0,0,0,.15);
+        border-radius: 50%;
+        border-radius: 1px solid #cbcbcb;
+
+        &--pelos {
+            background: url("../img/depilacao-pro-depil-pro-corpo-134x150.jpg");
+            @include background();
+        }
+        
+        &--estrias {
+            background: url("../img/estrias-pro-corpo-150x130.jpg");
+            @include background();
+        }
+
+        &--celulite {
+            background: url("../img/celulite-pro-corpo-150x126.jpg");
+            @include background();
+        }
+
+        &--flacidez {
+            background: url("../img/flacidez-pro-corpo-130x150.jpg");
+            @include background();
+        }
+
+        &--gordura {
+            background: url("../img/gordura-localizada-pro-corpo.jpg");
+            @include background();
+        }
+    }
+
+    &__sub-titulo {
+        font-size: $vintedois;
+        @include sub-titulo();
+
+    }
+
+    &__desc {
+        @include descricao();
+    }
+
+    &__btn {
+        font-size: $doze;
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-top: 1em;
+    }
+}

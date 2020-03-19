@@ -1,0 +1,87 @@
+.footer {
+    background: #f7f7f7;
+
+    &__container {
+        @include container(84%);
+        padding: 2em 0;
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__nav {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__titulo {
+        font-size: $dezoito;
+        color: $secondary-color;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
+    &__link {
+        color: #333;
+        line-height: 28px;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.contato-footer {
+    margin-left: 7rem;
+    background: #894c9d;
+    padding: 1em;
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+
+    &__titulo {
+        font-size: $treze;
+        text-transform: uppercase;
+        margin-bottom: .3em;
+    }
+
+    &__numero {
+        font-weight: 700;
+        color: #fff;
+        font-size: $vinteseis;
+    }
+    
+    p {
+        font-size: $doze;
+        text-transform: uppercase;
+        margin: .5em 0;
+    }
+
+    &__icon {
+        width: 10%;
+    }
+}
+
+.btn {
+
+    &--unidade {
+        width: 100%;
+        padding: 8px 12px;
+        border-radius: 5px;
+        color: #333;
+        font-size: $catorze;
+        background: #fff;
+    }
+}
+
+.fa-chevron-up {
+    font-size: $doze;
+    color: #333;
+}
+
+@import "../sass/direitos";
